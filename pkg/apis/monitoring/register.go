@@ -15,5 +15,5 @@
 package monitoring
 
 const (
-	GroupName = "monitoring.prometheus-operator.io"
+	GroupName = "monitoring.prometheus-operator.dev"
 )

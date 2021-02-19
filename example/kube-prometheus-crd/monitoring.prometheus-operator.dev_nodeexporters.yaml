@@ -6,9 +6,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
   creationTimestamp: null
-  name: nodeexporters.monitoring.prometheus-operator.io
+  name: nodeexporters.monitoring.prometheus-operator.dev
 spec:
-  group: monitoring.prometheus-operator.io
+  group: monitoring.prometheus-operator.dev
   names:
     kind: NodeExporter
     listKind: NodeExporterList

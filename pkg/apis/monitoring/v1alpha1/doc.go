@@ -13,6 +13,6 @@
 // limitations under the License.
 
 // +k8s:deepcopy-gen=package
-// +groupName=monitoring.prometheus-operator.io
+// +groupName=monitoring.prometheus-operator.dev
 
 package v1alpha1

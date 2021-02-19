@@ -51,7 +51,7 @@ var (
 			ControllerGenOpts: "crd:crdVersions=v1",
 			YAMLDir:           "./example/kube-prometheus-crd",
 			JsonnetDir:        "./jsonnet/kube-prometheus",
-			CRDAPIGroup:       "monitoring.prometheus-operator.io",
+			CRDAPIGroup:       "monitoring.prometheus-operator.dev",
 			ControllerPath:    "./pkg/apis/monitoring/v1alpha1",
 			CRDNames: []crdName{
 				{"nodeexporter", "nodeexporters"},
