@@ -34,9 +34,28 @@ spec:
             type: object
           spec:
             properties:
+              image:
+                description: The image of node-exporter to use.
+                type: string
+              listenAddress:
+                default: 127.0.0.1
+                description: ListenAddress is the host node-exporter processes will
+                  bind to.
+                type: string
+              port:
+                default: 9100
+                description: Port is the port node-exporter processes will bind to.
+                type: integer
               resources:
-                description: Define resources requests and limits for each node-exporter
-                  pod.
+                default:
+                  limits:
+                    cpu: 250m
+                    memory: 180Mi
+                  requests:
+                    cpu: 102m
+                    memory: 180Mi
+                description: Resources defines the resources requests and limits for
+                  each node-exporter pod.
                 properties:
                   limits:
                     additionalProperties:
@@ -61,6 +80,12 @@ spec:
                       to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/'
                     type: object
                 type: object
+              version:
+                description: The version of node-exporter the specified image represent.
+                type: string
+            required:
+            - image
+            - version
             type: object
         required:
         - spec
