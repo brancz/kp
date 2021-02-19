@@ -55,6 +55,7 @@ var (
 			ControllerPath:    "./pkg/apis/monitoring/v1alpha1",
 			CRDNames: []crdName{
 				{"nodeexporter", "nodeexporters"},
+				{"blackboxexporter", "blackboxexporters"},
 			},
 			CustomizeYAML: func(generator crdGenerator) error {
 				return nil
