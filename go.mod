@@ -5,6 +5,7 @@ go 1.16
 require (
 	github.com/kubernetes-sigs/prometheus-adapter v0.8.4-0.20210310160114-976c38aee488
 	github.com/pkg/errors v0.9.1
+	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.45.0
 	k8s.io/api v0.20.4
 	k8s.io/apimachinery v0.20.4
 )
