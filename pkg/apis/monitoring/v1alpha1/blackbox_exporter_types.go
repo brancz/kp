@@ -1,6 +1,7 @@
 package v1alpha1
 
 import (
+	blackboxconfig "github.com/prometheus/blackbox_exporter/config"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
@@ -31,5 +32,5 @@ type BlackboxExporterSpec struct {
 	// +kubebuilder:default=1
 	Replicas int `json:"replicas,omitempty"`
 	// Configuration of blackbox-exporter in the same form as in
-	Modules map[string]string `json:"modules,omitempty"` // TODO: Consider using blackbox-exporter types for this
+	Modules map[string]blackboxconfig.Module `json:"modules,omitempty"`
 }

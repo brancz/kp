@@ -43,7 +43,7 @@ spec:
                 type: string
               modules:
                 additionalProperties:
-                  type: string
+                  type: object
                 description: Configuration of blackbox-exporter in the same form as
                   in
                 type: object
