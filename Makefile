@@ -4,7 +4,8 @@ export PATH := $(TOOLS_BIN_DIR):$(PATH)
 
 TYPES_V1ALPHA1_TARGET := pkg/apis/monitoring/v1alpha1/node_exporter_types.go \
 	pkg/apis/monitoring/v1alpha1/blackbox_exporter_types.go \
-	pkg/apis/monitoring/v1alpha1/kube_state_metrics_types.go
+	pkg/apis/monitoring/v1alpha1/kube_state_metrics_types.go \
+	pkg/apis/monitoring/v1alpha1/prometheus_operator_types.go
 
 CONTROLLER_GEN_BINARY := $(TOOLS_BIN_DIR)/controller-gen
 GOJSONTOYAML_BINARY := $(TOOLS_BIN_DIR)/gojsontoyaml

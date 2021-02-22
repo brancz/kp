@@ -57,6 +57,7 @@ var (
 				{"nodeexporter", "nodeexporters"},
 				{"blackboxexporter", "blackboxexporters"},
 				{"kubestatemetrics", "kubestatemetrics"},
+				{"prometheusoperator", "prometheusoperators"},
 			},
 			CustomizeYAML: func(generator crdGenerator) error {
 				return nil
