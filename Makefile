@@ -2,7 +2,8 @@ SHELL=/bin/bash -o pipefail
 TOOLS_BIN_DIR ?= $(shell pwd)/tmp/bin
 export PATH := $(TOOLS_BIN_DIR):$(PATH)
 
-TYPES_V1ALPHA1_TARGET := pkg/apis/monitoring/v1alpha1/node_exporter_types.go
+TYPES_V1ALPHA1_TARGET := pkg/apis/monitoring/v1alpha1/node_exporter_types.go \
+	pkg/apis/monitoring/v1alpha1/blackbox_exporter_types.go
 
 CONTROLLER_GEN_BINARY := $(TOOLS_BIN_DIR)/controller-gen
 GOJSONTOYAML_BINARY := $(TOOLS_BIN_DIR)/gojsontoyaml
