@@ -56,6 +56,7 @@ var (
 			CRDNames: []crdName{
 				{"nodeexporter", "nodeexporters"},
 				{"blackboxexporter", "blackboxexporters"},
+				{"kubestatemetrics", "kubestatemetrics"},
 			},
 			CustomizeYAML: func(generator crdGenerator) error {
 				return nil
