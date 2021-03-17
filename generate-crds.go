@@ -59,6 +59,8 @@ var (
 				{"kubestatemetrics", "kubestatemetrics"},
 				{"prometheusoperator", "prometheusoperators"},
 				{"prometheusadapter", "prometheusadapters"},
+				{"prometheusprovisioning", "prometheusprovisionings"},
+				{"alertmanagerprovisioning", "alertmanagerprovisionings"},
 			},
 			CustomizeYAML: func(generator crdGenerator) error {
 				return nil
